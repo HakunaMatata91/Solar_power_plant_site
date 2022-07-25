@@ -6,8 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-
-	<link rel="shortcut icon" href="favicon.ico">
+	-->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -253,7 +252,7 @@
 									<li class="client-main__link">Смонтирована: апрель 2017 г.</li>
 									<li class="client-main__link">Срок службы: 25-30 лет</li>
 								</ul>
-								<button data-popup="#popup" type="button" class="holder-content__button button">
+								<button data-popup="#popup" type="button" class="client-main__button button">
 									<span class="_icon-arrow"></span> записаться на консультацию
 								</button>
 							</div>
@@ -308,17 +307,110 @@
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
+				<div class="footer__content-body content-body">
+					<div class="content-body__main-footer main-footer">
+						<div class="main-footer__form-footer form-footer">
+							<div class="form-footer__title">ОСТАВИТЬ ЗАЯВКУ</div>
+							<form action="#" class="form-footer__subscribe-form subscribe-form">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Имя" class="subscribe-form__input">
+								<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Телефон" class="subscribe-form__input">
+								<button data-popup="#popup" type="button" class="subscribe-form__button button">
+									<span class="_icon-arrow"></span> Оставить заявку
+								</button>
+							</form>
+						</div>
+						<div class="main-footer__contacts contacts-footer">
+							<div class="contacts-footer__title">КОНТАКТЫ</div>
+							<div class="contacts-footer__menu-contact contact-menu">
+								<nav class="contact-menu">
+									<ul class="contact-menu__list">
+										<li class="contact-menu__item">
+											<div>
+												<p>Центральный офис:</p>
+												<p>г. Львов, ул, Владимира Великого 13, 1й этаж</p>
+											</div>
+										</li>
+										<li class="contact-menu__item">
+											<div>
+												<p>Представительство в Киеве:</p>
+												<p>г. Киев, ул. Є. Коновальця, 103 оф. 410</p>
+											</div>
+										</li>
+										<li class="contact-menu__item">
+											<div>
+												<p>Представительства в Харькове, Одессе, Львове, Херсоне</p>
+											</div>
+										</li>
+										<li class="contact-menu__item">
+											<a href="tel:380983728473" class="contact-menu__link">+380 98 372 84 73</a>
+											<a href="tel:380933678275" class="contact-menu__link">+380 93 367 82 75</a>
+										</li>
+										<li class="contact-menu__item">
+											<div>
+												<p>Ежедневно 08:00 - 20:00</p>
+											</div>
+										</li>
+										<li class="contact-menu__item">
+											<a href="" class="contact-menu__link"></a>
+										</li>
+										<li class="contact-menu__item">
+											<a href="" class="contact-menu__link"></a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<div class="content-body__footer-socials footer-socials">
+						<div class="footer-socials__privacy">Политика конфиденциальности</div>
+						<div class="footer-socials__footer-logo footer-logo">
+							<a href="" class="footer-logo__logo"><img src="img/icon/logo.svg" alt="logo"></a>
+						</div>
+
+						<div class="footer-socials__socials-items socials-items">
+							<ul class="socials-items__list">
+								<li class="socials-items__item">
+									<a href="" class="socials-items__link">
+										<img src="img/icon//instagram.png" alt="instagram">
+									</a>
+								</li>
+								<li class="socials-items__item">
+									<a href="" class="socials-items__link">
+										<img src="img/icon/telegram.png" alt="telegram">
+									</a>
+								</li>
+								<li class="socials-items__item">
+									<a href="" class="socials-items__link">
+										<img src="img/icon/whatsapp.png" alt="whatsapp">
+									</a>
+								</li>
+								<li class="socials-items__item">
+									<a href="" class="socials-items__link">
+										<img src="img/icon/facebook.png" alt="facebook">
+									</a>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
 			</div>
 		</footer>
 	</div>
 	<div id="popup" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
-				<button data-close type="button" class="popup__close">Закрыть</button>
-				<div class="popup__text">
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id quod quae quidem esse fuga odit aliquam
-					delectus soluta corrupti ipsa dolores molestias, debitis, exercitationem explicabo nihil obcaecati
-					perferendis inventore asperiores.
+				<button data-close type="button" class="popup__close"><span></span></button>
+				<div class="popup__text popup-body">
+					<div class="popup-body__form form-popup">
+						<form action="#" class="form-popup__body form-subscribe">
+							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-required="name" placeholder="Имя" class="form-subscribe__input">
+							<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" data-required="phone" placeholder="Номер телефона" required class="form-subscribe__input">
+							<input autocomplete="off" required type="email" name="form[]" data-error="Ошибка" data-required="email" placeholder="E-mail" class="form-subscribe__input">
+							<textarea type="text" placeholder="Сообщение" class="form-subscribe__input" rows="3" cols="19"></textarea> </textarea>
+							<button type="submit" class="form-subscribe__button">Отправить</button>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>

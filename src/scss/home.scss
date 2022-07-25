@@ -68,6 +68,7 @@
    // .social-block__link
    &__link {
       color: $whiteColor;
+
    }
 }
 
@@ -410,21 +411,17 @@
          margin-bottom: em(15, 10);
       }
    }
-}
 
-.holder-content {
-
-   // .holder-content__button
    &__button {
       color: $mainColor;
       font-weight: 400;
       font-size: rem(18);
       line-height: math.div(25, 20);
+      position: relative;
+      right: 7%;
+      bottom: 0;
 
       ._icon-arrow {
-         position: relative;
-         left: 50px;
-         bottom: 25px;
 
          &::before {
             // z-index: 10;
@@ -437,6 +434,36 @@
       }
    }
 }
+
+.holder-content {
+
+   // .holder-content__button
+   &__button {
+      color: $whiteColor;
+      font-weight: 400;
+      font-size: rem(18);
+      line-height: math.div(25, 20);
+
+      ._icon-arrow {
+         position: relative;
+         left: 50px;
+         bottom: 25px;
+
+         &::before {
+            // z-index: 10;
+            padding: rem(50) rem(30);
+            border: 2px solid $whiteColor;
+            background: inherit;
+            border-radius: 50%;
+         }
+
+      }
+   }
+
+   &__button {}
+}
+
+
 
 //========================================================================================================================================================
 // COMMERCIAL
